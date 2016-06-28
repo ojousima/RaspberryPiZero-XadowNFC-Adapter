@@ -11,13 +11,13 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
-Comment3 ""
+Title "Xadow adapter board for Raspberry Pi Zero"
+Date "2016-06-28"
+Rev "d3c23a8"
+Comp "Helsinki Hacklab"
+Comment1 "https://github.com/ojousima/RaspberryPiZero-XadowNFC-Adapter"
+Comment2 "otso@ojousima.net"
+Comment3 "ojousima@ircnet"
 Comment4 ""
 $EndDescr
 $Comp
@@ -365,4 +365,6 @@ Wire Wire Line
 	2550 3550 3050 3550
 Text Label 3050 3550 2    60   ~ 0
 CS
+Text Notes 7250 3700 0    60   ~ 0
+ FH12-12S-0.5SH(55)
 $EndSCHEMATC

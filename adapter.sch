@@ -1,0 +1,368 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:conn
+LIBS:regul
+LIBS:raspberrypihat
+LIBS:mic5239-x
+LIBS:xadow
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RaspberryPiHAT RASPI?
+U 1 1 5772CADE
+P 1950 3550
+F 0 "RASPI?" H 1700 4450 60  0000 C CNN
+F 1 "RaspberryPiHAT" H 1950 2350 60  0000 C CNN
+F 2 "" H 1950 3550 60  0000 C CNN
+F 3 "" H 1950 3550 60  0000 C CNN
+	1    1950 3550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1350 3550
+$Comp
+L MIC5239-x.x U?
+U 1 1 5772CC35
+P 4500 2850
+F 0 "U?" H 4700 2600 60  0000 C CNN
+F 1 "MIC5239-x.x" H 4500 3050 60  0000 C CNN
+F 2 "" H 4500 2850 60  0000 C CNN
+F 3 "" H 4500 2850 60  0000 C CNN
+	1    4500 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3350 4600 3250
+Wire Wire Line
+	4300 3350 4600 3350
+Wire Wire Line
+	4300 3350 4300 3250
+Wire Wire Line
+	4400 3250 4400 3350
+Connection ~ 4400 3350
+Wire Wire Line
+	4500 3250 4500 3350
+Connection ~ 4500 3350
+Wire Wire Line
+	4450 3350 4450 3550
+Connection ~ 4450 3350
+$Comp
+L R R?
+U 1 1 5772CE77
+P 5250 2450
+F 0 "R?" V 5330 2450 50  0000 C CNN
+F 1 "10k" V 5250 2450 50  0000 C CNN
+F 2 "" V 5180 2450 50  0000 C CNN
+F 3 "" H 5250 2450 50  0000 C CNN
+	1    5250 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 2600 5250 2950
+Wire Wire Line
+	5100 2950 5850 2950
+Connection ~ 5250 2950
+$Comp
+L C C?
+U 1 1 5772CF29
+P 5600 3250
+F 0 "C?" H 5625 3350 50  0000 L CNN
+F 1 "10u" H 5625 3150 50  0000 L CNN
+F 2 "" H 5638 3100 50  0000 C CNN
+F 3 "" H 5600 3250 50  0000 C CNN
+	1    5600 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5772CF78
+P 3700 3250
+F 0 "C?" H 3725 3350 50  0000 L CNN
+F 1 "10u" H 3725 3150 50  0000 L CNN
+F 2 "" H 3738 3100 50  0000 C CNN
+F 3 "" H 3700 3250 50  0000 C CNN
+	1    3700 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 2750 3900 2750
+Wire Wire Line
+	3700 2750 3700 3100
+Wire Wire Line
+	3700 3400 3700 3550
+Wire Wire Line
+	5600 3400 5600 3550
+$Comp
+L GNDD #PWR?
+U 1 1 5772D041
+P 3700 3550
+F 0 "#PWR?" H 3700 3300 50  0001 C CNN
+F 1 "GNDD" H 3700 3400 50  0000 C CNN
+F 2 "" H 3700 3550 50  0000 C CNN
+F 3 "" H 3700 3550 50  0000 C CNN
+	1    3700 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR?
+U 1 1 5772D064
+P 4450 3550
+F 0 "#PWR?" H 4450 3300 50  0001 C CNN
+F 1 "GNDD" H 4450 3400 50  0000 C CNN
+F 2 "" H 4450 3550 50  0000 C CNN
+F 3 "" H 4450 3550 50  0000 C CNN
+	1    4450 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR?
+U 1 1 5772D082
+P 5600 3550
+F 0 "#PWR?" H 5600 3300 50  0001 C CNN
+F 1 "GNDD" H 5600 3400 50  0000 C CNN
+F 2 "" H 5600 3550 50  0000 C CNN
+F 3 "" H 5600 3550 50  0000 C CNN
+	1    5600 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 3100 5600 2750
+Connection ~ 5600 2750
+Wire Wire Line
+	5250 2300 5250 2200
+$Comp
+L +3.3V #PWR?
+U 1 1 5772D121
+P 1250 2250
+F 0 "#PWR?" H 1250 2100 50  0001 C CNN
+F 1 "+3.3V" H 1250 2390 50  0000 C CNN
+F 2 "" H 1250 2250 50  0000 C CNN
+F 3 "" H 1250 2250 50  0000 C CNN
+	1    1250 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 2750 1250 2750
+Wire Wire Line
+	1250 2750 1250 2250
+Wire Wire Line
+	2550 2850 2650 2850
+Wire Wire Line
+	2650 2850 2650 2750
+Connection ~ 2650 2750
+$Comp
+L +3.3V #PWR?
+U 1 1 5772D353
+P 5250 2200
+F 0 "#PWR?" H 5250 2050 50  0001 C CNN
+F 1 "+3.3V" H 5250 2340 50  0000 C CNN
+F 2 "" H 5250 2200 50  0000 C CNN
+F 3 "" H 5250 2200 50  0000 C CNN
+	1    5250 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 2950 2650 2950
+Wire Wire Line
+	2650 2950 2650 4900
+Wire Wire Line
+	2550 4350 2650 4350
+Connection ~ 2650 4350
+Wire Wire Line
+	2550 4150 2650 4150
+Connection ~ 2650 4150
+Wire Wire Line
+	2550 3650 2650 3650
+Connection ~ 2650 3650
+Wire Wire Line
+	2550 3350 2650 3350
+Connection ~ 2650 3350
+Wire Wire Line
+	1350 3150 1250 3150
+Wire Wire Line
+	1250 3150 1250 4900
+Wire Wire Line
+	1350 4650 1250 4650
+Connection ~ 1250 4650
+Wire Wire Line
+	1250 3950 1350 3950
+Connection ~ 1250 3950
+$Comp
+L GNDD #PWR?
+U 1 1 5772D6E7
+P 1250 4900
+F 0 "#PWR?" H 1250 4650 50  0001 C CNN
+F 1 "GNDD" H 1250 4750 50  0000 C CNN
+F 2 "" H 1250 4900 50  0000 C CNN
+F 3 "" H 1250 4900 50  0000 C CNN
+	1    1250 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR?
+U 1 1 5772D715
+P 2650 4900
+F 0 "#PWR?" H 2650 4650 50  0001 C CNN
+F 1 "GNDD" H 2650 4750 50  0000 C CNN
+F 2 "" H 2650 4900 50  0000 C CNN
+F 3 "" H 2650 4900 50  0000 C CNN
+	1    2650 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5772D7AF
+P 3850 2450
+F 0 "R?" V 3930 2450 50  0000 C CNN
+F 1 "10k" V 3850 2450 50  0000 C CNN
+F 2 "" V 3780 2450 50  0000 C CNN
+F 3 "" H 3850 2450 50  0000 C CNN
+	1    3850 2450
+	-1   0    0    1   
+$EndComp
+Connection ~ 3700 2750
+Wire Wire Line
+	2550 3250 3500 3250
+Wire Wire Line
+	3500 3250 3500 2950
+Wire Wire Line
+	3850 2600 3850 2950
+Connection ~ 3850 2950
+Wire Wire Line
+	3500 2950 3900 2950
+Wire Wire Line
+	3850 2300 3850 2200
+$Comp
+L +3.3V #PWR?
+U 1 1 5772DB15
+P 3850 2200
+F 0 "#PWR?" H 3850 2050 50  0001 C CNN
+F 1 "+3.3V" H 3850 2340 50  0000 C CNN
+F 2 "" H 3850 2200 50  0000 C CNN
+F 3 "" H 3850 2200 50  0000 C CNN
+	1    3850 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 2750 7150 2750
+Text Label 5850 2950 2    60   ~ 0
+FLAG
+Wire Wire Line
+	2550 3450 3050 3450
+Text Label 3050 3450 2    60   ~ 0
+FLAG
+$Comp
+L XADOW XADOW?
+U 1 1 5772DE0D
+P 7350 3150
+F 0 "XADOW?" H 7250 4050 60  0000 C CNN
+F 1 "XADOW" H 7250 2750 60  0000 C CNN
+F 2 "" H 8150 2550 60  0000 C CNN
+F 3 "" H 8150 2550 60  0000 C CNN
+	1    7350 3150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 2850 1050 2850
+Wire Wire Line
+	1350 2950 1050 2950
+Text Label 1050 2850 0    60   ~ 0
+SDA
+Text Label 1050 2950 0    60   ~ 0
+SCL
+Wire Wire Line
+	2550 3050 3050 3050
+Wire Wire Line
+	3050 3150 2550 3150
+Text Label 3050 3050 2    60   ~ 0
+TXD
+Text Label 3050 3150 2    60   ~ 0
+RXD
+Wire Wire Line
+	2550 4550 2950 4550
+Wire Wire Line
+	2950 4650 2550 4650
+Wire Wire Line
+	950  4550 1350 4550
+Text Label 950  4550 0    60   ~ 0
+MISO
+Text Label 2950 4650 2    60   ~ 0
+SCLK
+Text Label 2950 4550 2    60   ~ 0
+MOSI
+Wire Wire Line
+	7150 2950 7050 2950
+Wire Wire Line
+	7050 2950 7050 2850
+Wire Wire Line
+	7050 2850 7150 2850
+Wire Wire Line
+	7050 2900 7000 2900
+Wire Wire Line
+	7000 2900 7000 3650
+Connection ~ 7050 2900
+$Comp
+L GNDD #PWR?
+U 1 1 5772E525
+P 7000 3650
+F 0 "#PWR?" H 7000 3400 50  0001 C CNN
+F 1 "GNDD" H 7000 3500 50  0000 C CNN
+F 2 "" H 7000 3650 50  0000 C CNN
+F 3 "" H 7000 3650 50  0000 C CNN
+	1    7000 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3350 7150 3350
+Wire Wire Line
+	7150 3450 6750 3450
+Text Label 6750 3350 0    60   ~ 0
+TXD
+Text Label 6750 3450 0    60   ~ 0
+RXD
+Wire Wire Line
+	7150 3250 6750 3250
+Wire Wire Line
+	6750 3150 7150 3150
+Wire Wire Line
+	6950 3050 7150 3050
+Connection ~ 6950 2750
+Wire Wire Line
+	6950 3050 6950 2750
+Text Label 6750 3250 0    60   ~ 0
+SDA
+Text Label 6750 3150 0    60   ~ 0
+SCL
+Wire Wire Line
+	7150 2350 6800 2350
+Wire Wire Line
+	6800 2450 7150 2450
+Wire Wire Line
+	7150 2550 6800 2550
+Text Label 6800 2350 0    60   ~ 0
+SCLK
+Text Label 6800 2450 0    60   ~ 0
+MOSI
+Text Label 6800 2550 0    60   ~ 0
+MISO
+Wire Wire Line
+	7150 2650 6800 2650
+Text Label 6800 2650 0    60   ~ 0
+CS
+Wire Wire Line
+	2550 3550 3050 3550
+Text Label 3050 3550 2    60   ~ 0
+CS
+$EndSCHEMATC
